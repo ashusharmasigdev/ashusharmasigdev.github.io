@@ -1,0 +1,13 @@
+.link-href-style-native
+{
+    color: rgba(var(--color-black), 1);
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.link-href-style-native:hover
+{
+    color: rgba(var(--color-primary), 1);
+}

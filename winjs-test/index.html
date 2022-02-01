@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WindowJS Site</title>
+    <link rel="stylesheet" href="css/vars.css">
+    <link rel="stylesheet" href="css/page-style.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/natives.css">
+</head>
+
+<body>
+
+    <div id="window-js-navbar" class="layout-flex">
+
+        <div class="inner-flex-container">
+
+            <div class="flex-start-layout">
+
+                <ul class="flex-links-container">
+                    <li class="flex-link-view link-view-style-native winjs-brand-view link-style-none">
+                        <a href="#">
+                            <div class="inline-container">
+                                <img id="winjs-logo" src="./assets/winjs.svg" alt="">
+                            </div>
+                            <div class="inline-container">
+                                <span>Window.js</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div id="winjs-mobile-navigator" class="responsive-mobile-menu flex-middle-layout">
+
+                <ul class="flex-links-container">
+                    <li class="flex-link-view link-view-style-native">
+                        <a href="#" class="link-href-style-none">About</a>
+                    </li>
+                    <li class="flex-link-view link-view-style-native">
+                        <a href="#" class="link-href-style-none">Documentation</a>
+                    </li>
+                    <li class="flex-link-view link-view-style-native">
+                        <a href="#" class="link-href-style-none">Development</a>
+                    </li>
+                    <li class="flex-link-view link-view-style-native">
+                        <a href="#" class="link-href-style-none">Download</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="flex-end-layouts">
+
+                <ul class="flex-links-container flex-enable-on-small-screen">
+                    <li class="flex-link-view link-view-style-only-native-view">
+                        <button id="menu-activator" onclick="MenuButtonClick()" class="align-style-menu-icon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </button>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- <div class="over-triggerer floating-dot">
+        <a href="#" title="Visit Window.js github profile">
+            <img src="https://cdnjs.cloudflare.com/ajax/libs/octicons/8.5.0/svg/mark-github.svg" alt="">
+        </a>
+    </div> -->
+
+    <div class="page-content-wrapper">
+        <div class="inner-page-content-wrapper">
+
+            <div class="winjs-sidebar-wrapper">
+                <div class="inner-sidebar-wrapper">
+
+                    <ul class="sidebar-items-group">
+                        
+                        <li class="sidebar-items-group-header">
+                            <span>INTRO</span>
+                        </li>
+
+                        <li class="active sidebar-item-wrapper">
+                            <a href="#" class="sidebar-item-native-link">
+                                <span class="sidebar-item-icon"></span>
+                                <span class="sidebar-item-label">Introduction</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item-wrapper">
+                            <a href="#" class="sidebar-item-native-link">
+                                <span class="sidebar-item-icon"></span>
+                                <span class="sidebar-item-label">API & Examples</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item-wrapper">
+                            <a href="#" class="sidebar-item-native-link">
+                                <span class="sidebar-item-icon"></span>
+                                <span class="sidebar-item-label">Download</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+
+                    <ul class="sidebar-items-group">
+                        
+                        <li class="sidebar-items-group-header">
+                            <span>EXTRAS</span>
+                        </li>
+
+                        <li class="sidebar-item-wrapper">
+                            <a href="#" class="sidebar-item-native-link">
+                                <span class="sidebar-item-icon"></span>
+                                <span class="sidebar-item-label">Processing with p5.js</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+
+                    <ul class="sidebar-items-group">
+                        
+                        <li class="sidebar-items-group-header">
+                            <span>CONTACT</span>
+                        </li>
+
+                        <li class="sidebar-item-wrapper">
+                            <a href="#" class="sidebar-item-native-link">
+                                <span class="sidebar-item-icon"></span>
+                                <span class="sidebar-item-label">FAQs</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item-wrapper">
+                            <a href="#" class="sidebar-item-native-link">
+                                <span class="sidebar-item-icon"></span>
+                                <span class="sidebar-item-label">License</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item-wrapper">
+                            <a href="#" class="sidebar-item-native-link">
+                                <span class="sidebar-item-icon"></span>
+                                <span class="sidebar-item-label">Issues</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item-wrapper">
+                            <a href="#" class="sidebar-item-native-link">
+                                <span class="sidebar-item-icon"></span>
+                                <span class="sidebar-item-label">Contact</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="winjs-body-wrapper">
+                <div class="inner-winjs-body-wrapper">
+                    
+                    <h1><span class="color-primary">Window.js</span> is an open-source javascript runtime for desktop graphics programming.</h1>
+
+                    <h3>Window.js comes with :</h3>
+                    <ul>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ab nostrum aut natus adipisci, voluptas vitae esse ut amet eaque blanditiis mollitia nobis deserunt corrupti? Dolores sequi autem aspernatur repellendus.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ab nostrum aut natus adipisci, voluptas vitae esse ut amet eaque blanditiis mollitia nobis deserunt corrupti? Dolores sequi autem aspernatur repellendus.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ab nostrum aut natus adipisci, voluptas vitae esse ut amet eaque blanditiis mollitia nobis deserunt corrupti? Dolores sequi autem aspernatur repellendus.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ab nostrum aut natus adipisci, voluptas vitae esse ut amet eaque blanditiis mollitia nobis deserunt corrupti? Dolores sequi autem aspernatur repellendus.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ab nostrum aut natus adipisci, voluptas vitae esse ut amet eaque blanditiis mollitia nobis deserunt corrupti? Dolores sequi autem aspernatur repellendus.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis ab nostrum aut natus adipisci, voluptas vitae esse ut amet eaque blanditiis mollitia nobis deserunt corrupti? Dolores sequi autem aspernatur repellendus.</li>
+                    </ul>
+
+                    <pre>const hellovar = "hello"
+console.log$(hellovar+"is it?");</pre>
+
+                    <img src="./assets/Screenshot from 2021-12-05 15-36-08.png" alt="">
+
+                    <div class="seperator"></div>
+
+                    <h1>Upper is just for only test</h1>
+
+                    <a href="#">More Info</a>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab provident ex voluptates debitis cumque natus itaque blanditiis facilis, sunt fuga fugit dolorum? Blanditiis error et, recusandae repellat porro nemo iste!, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident laborum reiciendis corporis similique delectus ea molestiae. Quibusdam atque blanditiis, beatae non, dolorem officiis quam nisi assumenda consequatur, qui unde veritatis.</p>
+
+                </div>
+                
+                <div class="winjs-footer">
+                    
+                    <div class="inner-winjs-footer">
+
+                        <img class="winjs-footer-logo" src="./assets/winjs.svg" alt="">
+
+                        <a class="link-href-style-native">Window.js &nbsp;|</a>
+
+                        <a href="#" class="link-href-style-native">Github Repo.</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="winjs-empty-space">
+                <div class="inner-winjs-empty-space">
+                    <img class="winjs-space-logo" src="./assets/winjs.svg" alt="">
+                
+                    <ul class="flex-links-container">
+                        <li class="flex-link-view">
+                            <a href="#">Browse Window.js on Github</a>
+                        </li>
+                        <li class="flex-link-view">
+                            <a href="#">Window.js Releases</a>
+                        </li>
+                    </ul>
+                
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./js/controller.js"></script>
+
+</body>
+
+</html>

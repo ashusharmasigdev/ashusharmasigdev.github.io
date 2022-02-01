@@ -1,0 +1,13 @@
+:root
+{
+    /* RGB */
+    --color-purple-light: 158, 0, 255;      /*#9E00FF*/
+    --color-purple-dark: 112, 0, 152;       /* #700098 */
+    --color-pink-light: 219, 118, 255;    /* #DB76FF Purple Tinted */
+    --color-pink-dark: 203, 60, 255;     /* #cb3cff Purple Tinted */
+    --color-white: 255, 255, 255;
+    --color-black: 0, 0, 0;
+    --color-primary: var(--color-purple-light);
+
+    --navbar-height: 55px;
+}
